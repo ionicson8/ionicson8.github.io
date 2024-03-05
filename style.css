@@ -1,0 +1,29 @@
+.navbar {
+    border-bottom: 1px solid #000;
+    padding-bottom: 12px;
+    margin-bottom: 150px;
+}
+
+.navbar a {
+    color: black !important;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar li {
+    padding-left: 30px;
+}
+
+.main {
+    width: 600px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 23px;
+}
