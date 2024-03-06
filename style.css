@@ -1,7 +1,8 @@
 .navbar {
     border-bottom: 1px solid #000;
     padding-bottom: 12px;
-    margin-bottom: 150px;
+    background-color: white;
+    z-index: 1;
 }
 
 .navbar a {
@@ -14,9 +15,31 @@
     padding-left: 30px;
 }
 
+.nav-link {
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0;
+}
+
 .main {
+    margin-top: 200px;
+}
+
+.main .text {
     width: 600px;
     margin-bottom: 40px;
+}
+
+.main p {
+    font-size: 23px;
+}
+
+.main a {
+    color: black;
+    font-size: 23px;
+    text-decoration: underline;
 }
 
 h1 {
@@ -24,6 +47,129 @@ h1 {
     margin-bottom: 30px;
 }
 
-p {
-    font-size: 23px;
+.projects {
+    margin-top: 100px;
+}
+
+.col-md-6 {
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-bottom: 0px;
+}
+
+.project-card {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.project-card img {
+    max-width: 70%;
+    max-height: 70%;
+    display: block;
+    margin: auto;
+}
+
+.project-text {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.project-card:hover .project-text {
+    opacity: 1;
+}
+
+.tint {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #004c94;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.project-card:hover .tint {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    margin: 5% auto;
+    border: 1px solid #888;
+    max-width: 1000px;
+    width: 80%;
+}
+
+.modal-content button {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    z-index: 1;
+    border: none;
+}
+
+.modal-content button:active, button:focus {
+    outline: none;
+}
+
+.modal-content button img {
+    max-width: 20px;
+}
+
+.modal-picture {
+    height: 500px;
+    background-color: #f0f0f0;
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+
+.modal-picture img {
+    max-height: 80%;
+    display: block;
+    margin: auto;
+}
+
+.modal-text {
+    height: 200px;
+    background-color: white;
+    padding: 20px 40px;
+}
+
+.modal-text h1 {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.modal-text p {
+    font-weight: 400;
+    font-size: 20px;
 }
