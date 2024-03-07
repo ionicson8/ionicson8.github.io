@@ -169,7 +169,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.modal-text p {
+.modal-text p, a {
     font-weight: 400;
     font-size: 20px;
 }
